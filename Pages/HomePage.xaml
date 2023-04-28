@@ -1,0 +1,19 @@
+﻿<Page
+    x:Class="UWPFamily_Launcher.Pages.HomePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UWPFamily_Launcher"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
+    mc:Ignorable="d"
+    muxc:BackdropMaterial.ApplyToRootOrPageBackground="True">
+
+    <Grid>
+        <Grid Height="49" VerticalAlignment="Top">
+            <FontIcon Glyph="&#xE10F;" FontSize="28" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0"/>
+            <TextBlock Text="Home" HorizontalAlignment="Left" VerticalAlignment="Center" Style="{StaticResource CaptionTextBlockStyle}" FontSize="24" FontWeight="Bold" Margin="52,0,0,0"/>
+        </Grid>
+        <TextBlock Text="Welcome! Here you will find latest news about our Apps and Games." Style="{StaticResource CaptionTextBlockStyle}" FontSize="36" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,78,0,0"/>
+    </Grid>
+</Page>

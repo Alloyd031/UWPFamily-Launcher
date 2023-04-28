@@ -1,0 +1,44 @@
+﻿<Page
+    x:Class="UWPFamily_Launcher.GamesPages.UWPBlox"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UWPFamily_Launcher.GamesPages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
+    xmlns:animatedvisuals="using:Microsoft.UI.Xaml.Controls.AnimatedVisuals"
+    mc:Ignorable="d"
+    muxc:BackdropMaterial.ApplyToRootOrPageBackground="True">
+
+    <Grid>
+        <Grid Height="49" VerticalAlignment="Top">
+            <Button
+					x:Name="BackButton"
+					Width="49"
+					Height="49"
+					AutomationProperties.Name="Back"
+					Background="Transparent"
+					BorderBrush="Transparent"
+					ToolTipService.ToolTip="Back"
+                    Click="BackButton_Click">
+                <muxc:AnimatedIcon x:Name="BackAnimatedIcon">
+                    <muxc:AnimatedIcon.Source>
+                        <animatedvisuals:AnimatedBackVisualSource/>
+                    </muxc:AnimatedIcon.Source>
+                    <muxc:AnimatedIcon.FallbackIconSource>
+                        <muxc:SymbolIconSource Symbol="Back"/>
+                    </muxc:AnimatedIcon.FallbackIconSource>
+                </muxc:AnimatedIcon>
+            </Button>
+        </Grid>
+        <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Margin="29,71,0,0">
+            <FontIcon Glyph="&#xE7FC;" FontSize="200" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock Text="UWPBlox" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource CaptionTextBlockStyle}" FontSize="50" FontWeight="Bold"/>
+        </StackPanel>
+        <TextBlock Text="UWPBlox is a fake client for Roblox (just a design)." FontSize="50" HorizontalAlignment="Left" VerticalAlignment="Center" Style="{StaticResource CaptionTextBlockStyle}" FontWeight="Bold" Margin="30,0,0,0"/>
+        <HyperlinkButton Content="Go to GitHub page" NavigateUri="https://github.com/Alloyd031/UWPBlox" Margin="30,539,0,0" FontSize="40" VerticalAlignment="Top"/>
+        <Button x:Name="RunUWPBlox" FontSize="40" Margin="30,611,0,0" Height="67" Width="67" VerticalAlignment="Top" Click="RunUWPBlox_Click" ToolTipService.ToolTip="Run UWPBlox">
+            <FontIcon Glyph="&#xF5B0;" FontSize="40"/>
+        </Button>
+    </Grid>
+</Page>
