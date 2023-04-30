@@ -43,7 +43,7 @@ namespace UWPFamily_Launcher.Pages
             MainPage mp = contentFrame.Content as MainPage;
             Grid grid = mp.Content as Grid;
             Grid PagesPanel = grid.FindName("PagesPanel") as Grid;
-            Frame ContentFrame = grid.FindName("ContentFrame") as Frame;
+            Frame ContentFrame = grid.FindName("ContentFrame") as Frame;    
             PagesPanel.Visibility = Visibility.Collapsed;
             ContentFrame.Margin = new Thickness(0, 0, 0, 0);
         }

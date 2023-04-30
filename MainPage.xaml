@@ -19,11 +19,9 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
-        <Button x:Name="SettingsButton" Height="50" Width="50" VerticalAlignment="Top" Background="Transparent" BorderBrush="Transparent" ToolTipService.ToolTip="Settings" Click="SettingsButton_Click">
-            <FontIcon Glyph="&#xE115;"/>
-        </Button>
+
         <Grid x:Name="AppTitleBar"
-              Background="Transparent" Margin="50,0,0,0">
+              Background="Transparent">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="16" />
                 <ColumnDefinition Width="Auto" />
@@ -62,6 +60,18 @@
                     <TextBlock Text="Games" Style="{StaticResource CaptionTextBlockStyle}" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 </Grid>
             </Button>
+            <StackPanel HorizontalAlignment="Right" VerticalAlignment="Bottom" Padding="0,0,10,10">
+                <Button x:Name="SettingsButton" Height="50" Width="50" VerticalAlignment="Top" Background="Transparent" BorderBrush="Transparent" ToolTipService.ToolTip="Settings" Click="SettingsButton_Click">
+                    <muxc:AnimatedIcon x:Name="SettingsAnimatedIcon">
+                        <muxc:AnimatedIcon.Source>
+                            <animatedvisuals:AnimatedSettingsVisualSource/>
+                        </muxc:AnimatedIcon.Source>
+                        <muxc:AnimatedIcon.FallbackIconSource>
+                            <muxc:SymbolIconSource Symbol="Setting"/>
+                        </muxc:AnimatedIcon.FallbackIconSource>
+                    </muxc:AnimatedIcon>
+                </Button>
+            </StackPanel>
         </Grid>
         <Frame x:Name="ContentFrame" Grid.Row="2" Grid.RowSpan="2" Margin="291,0,0,0" />
     </Grid>
