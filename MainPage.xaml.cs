@@ -52,5 +52,9 @@ namespace UWPFamily_Launcher
         {
             this.ContentFrame.Navigate(typeof(GamesPage));
         }
+        private void SettingsButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.ContentFrame.Navigate(typeof(SettingsPage));
+        }
     }
 }

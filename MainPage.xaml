@@ -19,8 +19,11 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
+        <Button x:Name="SettingsButton" Height="50" Width="50" VerticalAlignment="Top" Background="Transparent" BorderBrush="Transparent" ToolTipService.ToolTip="Settings" Click="SettingsButton_Click">
+            <FontIcon Glyph="&#xE115;"/>
+        </Button>
         <Grid x:Name="AppTitleBar"
-              Background="Transparent">
+              Background="Transparent" Margin="50,0,0,0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="16" />
                 <ColumnDefinition Width="Auto" />
