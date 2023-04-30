@@ -15,13 +15,13 @@
         <Grid Height="73" VerticalAlignment="Top">
             <Button
 					x:Name="BackButton"
-					Width="73"
-					Height="73"
+					Width="53"
+					Height="53"
 					AutomationProperties.Name="Back"
 					Background="Transparent"
 					BorderBrush="Transparent"
 					Click="BackButton_Click"
-					ToolTipService.ToolTip="Back" VerticalAlignment="Top">
+					ToolTipService.ToolTip="Back" Margin="10,0,0,0">
                 <muxc:AnimatedIcon x:Name="BackAnimatedIcon">
                     <muxc:AnimatedIcon.Source>
                         <animatedvisuals:AnimatedBackVisualSource/>
@@ -31,8 +31,8 @@
                     </muxc:AnimatedIcon.FallbackIconSource>
                 </muxc:AnimatedIcon>
             </Button>
-            <FontIcon Glyph="&#xE115;" FontSize="40" HorizontalAlignment="Left" VerticalAlignment="Top" Height="73" Width="73" Margin="73,0,0,0"/>
-            <TextBlock Text="Settings" Style="{StaticResource CaptionTextBlockStyle}" FontWeight="Black" FontSize="35" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="151,0,0,0"/>
+            <FontIcon Glyph="&#xE115;" FontSize="40" HorizontalAlignment="Left" VerticalAlignment="Center" Height="53" Width="53" Margin="68,0,0,0"/>
+            <TextBlock Text="Settings" Style="{StaticResource CaptionTextBlockStyle}" FontWeight="Black" FontSize="35" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="126,0,0,0"/>
         </Grid>
         <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
             <FontIcon Glyph="&#xEA39;" FontSize="60" HorizontalAlignment="Center" VerticalAlignment="Top"/>
