@@ -11,34 +11,16 @@
     muxc:BackdropMaterial.ApplyToRootOrPageBackground="True">
 
     <Grid>
-        <Grid Height="49" VerticalAlignment="Top">
-            <Button
-					x:Name="BackButton"
-					Width="49"
-					Height="49"
-					AutomationProperties.Name="Back"
-					Background="Transparent"
-					BorderBrush="Transparent"
-					ToolTipService.ToolTip="Back"
-                    Click="BackButton_Click">
-                <muxc:AnimatedIcon x:Name="BackAnimatedIcon">
-                    <muxc:AnimatedIcon.Source>
-                        <animatedvisuals:AnimatedBackVisualSource/>
-                    </muxc:AnimatedIcon.Source>
-                    <muxc:AnimatedIcon.FallbackIconSource>
-                        <muxc:SymbolIconSource Symbol="Back"/>
-                    </muxc:AnimatedIcon.FallbackIconSource>
-                </muxc:AnimatedIcon>
+        <Grid VerticalAlignment="Center" HorizontalAlignment="Center">
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top">
+                <FontIcon Glyph="&#xE8F2;" FontSize="200" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Text="UWPCord" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource CaptionTextBlockStyle}" FontSize="50" FontWeight="Bold"/>
+            </StackPanel>
+            <TextBlock Text="UWPCord is a fake client for Discord (just a design)." FontSize="50" HorizontalAlignment="Left" VerticalAlignment="Top" Style="{StaticResource CaptionTextBlockStyle}" FontWeight="Bold" Margin="10,272,0,0"/>
+            <HyperlinkButton Content="Go to GitHub page" NavigateUri="https://github.com/Alloyd031/UWPCord" Margin="0,360,0,0" FontSize="50" FontWeight="Bold" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+            <Button x:Name="RunUWPCord" FontSize="50" Margin="0,445,0,0" Height="67" Width="67" VerticalAlignment="Top" HorizontalAlignment="Center" Click="RunUWPCord_Click" ToolTipService.ToolTip="Run UWPCord">
+                <FontIcon Glyph="&#xF5B0;" FontSize="50" Margin="-34,-33,-33,-34"/>
             </Button>
         </Grid>
-        <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Margin="29,71,0,0">
-            <FontIcon Glyph="&#xE8F2;" FontSize="200" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            <TextBlock Text="UWPCord" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource CaptionTextBlockStyle}" FontSize="50" FontWeight="Bold"/>
-        </StackPanel>
-        <TextBlock Text="UWPCord is a fake client for Discord (just a design)." FontSize="50" HorizontalAlignment="Left" VerticalAlignment="Center" Style="{StaticResource CaptionTextBlockStyle}" FontWeight="Bold" Margin="30,0,0,0"/>
-        <HyperlinkButton Content="Go to GitHub page" NavigateUri="https://github.com/Alloyd031/UWPCord" Margin="30,539,0,0" FontSize="40" VerticalAlignment="Top"/>
-        <Button x:Name="RunUWPCord" FontSize="40" Margin="30,611,0,0" Height="67" Width="67" VerticalAlignment="Top" Click="RunUWPCord_Click" ToolTipService.ToolTip="Run UWPCord">
-            <FontIcon Glyph="&#xF5B0;" FontSize="40"/>
-        </Button>
     </Grid>
 </Page>

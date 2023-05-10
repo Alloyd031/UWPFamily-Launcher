@@ -1,0 +1,48 @@
+﻿<Page
+    x:Class="UWPFamily_Launcher.Pages.SettingsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UWPFamily_Launcher.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
+    xmlns:animatedvisuals="using:Microsoft.UI.Xaml.Controls.AnimatedVisuals"
+    mc:Ignorable="d"
+    muxc:BackdropMaterial.ApplyToRootOrPageBackground="True">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="120"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Button
+					x:Name="BackButton"
+					AutomationProperties.Name="Back"
+					Background="Transparent"
+					BorderBrush="Transparent"
+                    Height="32"
+                    Width="46"
+                    Style="{StaticResource NavigationBackButtonNormalStyle}"
+					Click="BackButton_Click"
+					ToolTipService.ToolTip="Back">
+        </Button>
+        <Grid x:Name="AppTitleBar"
+              Background="Transparent" Height="32" Margin="46,0,0,0">
+            <FontIcon Glyph="&#xE713;"
+                   Width="20"
+                   Height="20" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0"/>
+            <TextBlock
+                       x:Name="AppTitle"
+                       Text="Settings" FontSize="15" HorizontalAlignment="Left"
+                       Style="{StaticResource CaptionTextBlockStyle}"
+                       VerticalAlignment="Center" Margin="42,0,0,0"/>
+        </Grid>
+        <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.RowSpan="2">
+            <FontIcon Glyph="&#xEA39;" FontSize="60" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <TextBlock Text="Settings are not available." Style="{StaticResource CaptionTextBlockStyle}" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,65,0,0"/>
+        </Grid>
+    </Grid>
+</Page>

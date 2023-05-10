@@ -27,10 +27,6 @@ namespace UWPFamily_Launcher.AppsPages
         {
             this.InitializeComponent();
         }
-        private void BackButton_Click(object sender, RoutedEventArgs e)
-        {
-            this.Frame.GoBack();
-        }
         private async void RunUWPCord_Click(object sender, RoutedEventArgs e)
         {
             ErrorDialog dialog = new ErrorDialog();

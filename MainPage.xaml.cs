@@ -36,6 +36,10 @@ namespace UWPFamily_Launcher
             titleBar.ButtonBackgroundColor = Colors.Transparent;
             titleBar.ButtonInactiveBackgroundColor = Colors.Transparent;
         }
+        private void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.ContentFrame.GoBack();
+        }
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
             this.ContentFrame.Navigate(typeof(HomePage));
@@ -54,7 +58,7 @@ namespace UWPFamily_Launcher
         }
         private void SettingsButton_Click(object sender, RoutedEventArgs e)
         {
-            this.ContentFrame.Navigate(typeof(SettingsPage));
+            this.Frame.Navigate(typeof(SettingsPage));
         }
     }
 }
